@@ -1,0 +1,41 @@
+{
+  "features": [
+    {
+      "scenarios": [
+        {
+          "name": "This is my first scenario",
+          "status": "passed",
+          "tags": [],
+          "steps": [
+            {
+              "name": "Given I am a reliable user",
+              "status": "passed"
+            },
+            {
+              "name": "When I do something",
+              "status": "passed"
+            },
+            {
+              "name": "Then everything's \"FINE\"",
+              "status": "passed"
+            }
+          ]
+        }
+      ],
+      "name": "Exceptional feature...",
+      "descriptionLines": [
+        "As an important user I want to have this exceptional feature in order to.. ahm.. well show off I guess?"
+      ],
+      "status": "passed",
+      "tags": [
+        "Exceptional",
+        "exceptional"
+      ]
+    }
+  ],
+  "passedScenarios": 1,
+  "failedScenarios": 0,
+  "ignoredScenarios": 0,
+  "totalFeatures": 1,
+  "totalScenarios": 1
+}

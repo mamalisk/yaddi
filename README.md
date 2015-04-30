@@ -1,18 +1,25 @@
-Yadda HTML Report
-=================
+Yadda HTML Reporter
+===================
+
+Fancy HTML reports looking like ... this:
+
+![YADDA_HTML_REPORTS](https://raw.githubusercontent.com/mamalisk/agenta/master/README/yadda.png)
+
+
 
 **INSTALLATION**
 
       npm install yadda-html-reporter
 
 
-** USAGE**
+**USAGE**
 
 In order to use the yadda html report you need to do the following:
 
 a. instantiate YaddaReport:
 
 		var YaddaHtml = require('yadda-html-reporter');
+		var reportsOutputLocation = './my_local_output_directory/yadda.json';
 		var YaddaHtmlRep = new YaddaHtml(reportsOutputLocation);
 
 b. your Yadda.FeatureFileSearch section should look like this:
@@ -56,6 +63,10 @@ new Yadda.FeatureFileSearch(featuresLocation).each(function (file) {
 
         });
     });
+
+This will produce a yadda.json within my_local_output_directory
+
+c. Render the HTML
 
 
 

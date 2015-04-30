@@ -1,0 +1,116 @@
+.navigo, .navigo ul, .navigo li {
+    list-style: none;
+}
+
+.not_executed {
+    background-color: #cccbae;
+}
+
+.passed {
+    background-color: #46BFBD
+}
+
+.step_passed {
+    background-color: transparent;
+    padding-left: 15px;
+}
+
+.failed {
+    background-color: #F7464A;
+    color: cornsilk;
+}
+
+.step_failed {
+    background-color: #F7464A;
+    padding-left: 15px;
+    color: cornsilk;
+}
+
+.ignored {
+    background-color: #FDB45C
+}
+
+.step_ignored {
+    background-color: #FDB45C;
+    padding-left: 15px;
+}
+
+.story {
+    background-color: #b8eecd;
+    font-style: italic;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.navigo ul {
+    padding: 0;
+    margin: 0 0 0 18px;
+}
+
+.navigo {
+    padding: 4px;
+    margin: 0px;
+}
+
+.navigo > li {
+    margin: 4px 0;
+}
+
+.navigo > li li {
+    margin: 2px 0;
+}
+
+.navigo a {
+    color: #333;
+    display: block;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.navigo li > a > span {
+    float: right;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.navigo li > a:hover > span {
+    color: #fff;
+}
+
+.navigo li > a > span:after {
+    content: '\25be';
+}
+.navigo li.open > a > span:after {
+    content: '\25b4';
+}
+
+.navigo a:hover, .navigo li.active > a {
+    background-color: #7d4cd9;
+    color: #f5f5f5;
+}
+
+.navigo > li.active > a  {
+    background-color: #4D90FE;
+}
+
+.navigo li a {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 2px 10px;
+}
+
+.navigo > li > a {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 10px;
+}
+
+.contento {
+    padding-top : 20px;
+    padding-left : 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}

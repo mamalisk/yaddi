@@ -1,0 +1,31 @@
+<section id="results" style="width: 300px">
+    <h3>Stats:</h3>
+    <ul width="300">
+        <li>Total Features: <b>{{totalFeatures}}</b></li>
+        <li>Total Scenarios: <b>{{totalScenarios}}</b></li>
+        <li class="passed">Passed: <b>{{passedScenarios}}</b></li>
+        <li class="failed">Failed: <b>{{failedScenarios}}</b></li>
+        <li class="ignored">Ignored: <b>{{ignoredScenarios}}</b></li>
+    </ul>
+
+    </section>
+
+<section id="details" style="width: 1000px">
+    <h3>Features:</h3>
+    <ul id="features" class="navigo">{{#features}}
+        <li>
+            {{#tags}}<b>@{{.}}</b> {{/tags}}
+            <a href="#" class="{{status}}"><b>Feature: </b>{{name}}  </a>
+            <ul data-index="0" class="story">
+                {{#descriptionLines}}<li>{{.}}</li>{{/descriptionLines}}
+
+            </ul>
+            <ul data-index="0" style="display: block; background-color: #e7ffcc; border-style: solid; border-radius: 5px; border-color: #748665;">
+                {{#scenarios}}<li>{{>scenario}}</li>{{/scenarios}}
+
+            </ul>
+        </li>
+        <br/>
+    {{/features}}
+    </ul>
+</section>
