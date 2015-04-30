@@ -9,7 +9,7 @@ Fancy HTML reports looking like ... this:
 
 **INSTALLATION**
 
-      npm install yadda-html-reporter
+      npm install yadda-mocha-html-reporter
 
 
 **USAGE**
