@@ -18,7 +18,7 @@ In order to use the yadda html report you need to do the following:
 
 a. instantiate YaddaReport:
 
-		var YaddaHtml = require('yadda-html-reporter');
+		var YaddaHtml = require('yadda-mocha-html-reporter');
 		var reportsOutputLocation = './my_local_output_directory/yadda.json';
 		var YaddaHtmlRep = new YaddaHtml(reportsOutputLocation);
 

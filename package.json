@@ -1,6 +1,6 @@
 {
   "name": "yadda-mocha-html-reporter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description" : "A Yadda HTML report when using mocha.",
   "homepage": "https://github.com/mamalisk/yadda-html-reporter",
   "author" : "Kostas Mamalis <mamalis.kostas@gmail.com>",
