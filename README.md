@@ -24,7 +24,7 @@ a. instantiate YaddaReport:
 
 b. your Yadda.FeatureFileSearch section should look like this:
 
-new Yadda.FeatureFileSearch(featuresLocation).each(function (file) {
+		new Yadda.FeatureFileSearch(featuresLocation).each(function (file) {
 
 
         featureFile(file, function (feature) {
