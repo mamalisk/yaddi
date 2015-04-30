@@ -68,6 +68,10 @@ This will produce a yadda.json within my_local_output_directory
 
 c. Render the HTML
 
+copy the example in the html of this git repository and there you have it. the yadda.json will get updated by your execution. hope it works!
+
+For any comments/suggestions feel free to raise issues in this project or mail me at mamalis.kostas@gmail.com 
+
 
 
 
