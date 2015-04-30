@@ -3,7 +3,7 @@ Yadda HTML Reporter
 
 Fancy HTML reports looking like ... this:
 
-![YADDA_HTML_REPORTS](https://raw.githubusercontent.com/mamalisk/agenta/master/README/yadda.png)
+![YADDA_HTML_REPORTS](https://raw.githubusercontent.com/mamalisk/yadda-html-reporter/master/README/yadda.png)
 
 
 
