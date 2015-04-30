@@ -1,0 +1,73 @@
+{
+  "name": "yadda-mocha-html-reporter",
+  "version": "0.0.1",
+  "description" : "A Yadda HTML report when using mocha.",
+  "homepage": "https://github.com/mamalisk/yadda-html-reporter",
+  "author" : "Kostas Mamalis <mamalis.kostas@gmail.com>",
+  "contributors" : [],
+  "repository" : {
+    "type" : "git",
+    "url"  : "git://github.com/mamalisk/yadda-html-reporter.git"
+  },
+  "main" : "yadda-html-reporter.js",
+  "bugs" : {
+    "url" : "https://github.com/mamalisk/yadda-html-reporter/issues"
+  },
+  "license": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mamalisk/yadda-html-reporter/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "underscore" : "1.8.2",
+    "jsonfile" : "~2.0.0"
+  },
+  "devDependencies": {
+  },
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "tags": [
+    "bdd",
+    "automation",
+    "end to end testing",
+    "gherkin",
+    "webdriver",
+    "cucumber",
+    "web",
+    "test",
+    "selenium",
+    "browser",
+    "javascript",
+    "html",
+    "report",
+    "mocha"
+  ],
+  "keywords": [
+    "agenta",
+    "yadda",
+    "html",
+    "reporter",
+    "webdriverio",
+    "webdriver",
+    "selenium",
+    "appium",
+    "saucelabs",
+    "sauce",
+    "labs",
+    "mocha",
+    "nodeUnit",
+    "buster",
+    "phantomjs",
+    "chai",
+    "vows",
+    "jasmine",
+    "assert",
+    "cucumber",
+    "testingbot"
+  ]
+}
