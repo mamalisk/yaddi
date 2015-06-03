@@ -135,7 +135,9 @@ YaddaHtmlReporter.prototype.onAfter = function(){
         return scenario.status == 'not_executed' || scenario.status == 'ignored';
     });
 
-    this.featureFiles.features.push(this.reportingFeature);
+    this.featureFiles.features.push({
+        scenarios : this.reportingFeature.scenarios
+    });
     this.featureFiles.totalFeatures = this.totalFeatures;
     this.featureFiles.totalScenarios = this.totalScenarios;
 
