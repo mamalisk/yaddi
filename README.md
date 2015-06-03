@@ -57,7 +57,7 @@ b. your Yadda.FeatureFileSearch section should look like this:
             });
 
             after(function (done) {
-                YaddaHtmlRep.onAfter();
+                YaddaHtmlRep.onAfter(feature);
                     done();
             });
 

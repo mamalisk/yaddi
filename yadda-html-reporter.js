@@ -24,14 +24,14 @@ var YaddaHtmlReporter = function(reportsOutputLocation){
 
 YaddaHtmlReporter.prototype.onFeature = function(feature){
     this.reportingFeature = {
-        scenarios: []
+        scenarios: [],
+        name: feature.title,
+        descriptionLines : feature.description,
+        status : 'not_executed',
+        tags : Object.keys(feature.annotations)
     };
     this.totalFeatures++;
     this.totalScenarios += feature.scenarios.length;
-    this.reportingFeature.name = feature.title;
-    this.reportingFeature.descriptionLines = feature.description;
-    this.reportingFeature.status = "not_executed";
-    this.reportingFeature.tags = Object.keys(feature.annotations);
     this.executedScenarios = [];
 };
 
@@ -40,6 +40,7 @@ YaddaHtmlReporter.prototype.onBefore = function(){
     this.currentSteps = [];
     this.currentScenarioTags = [];
     this.currentScenarioScreenshot = "";
+    this.error = '';
     this.executedScenarios = [];
 };
 
@@ -49,6 +50,8 @@ YaddaHtmlReporter.prototype.onBeforeEach = function(){
         this.featureFiles.failedScenarios++;
         this.featureFiles.passedScenarios--;
     }
+    this.currentScenarioScreenshot = "";
+    this.error = '';
 };
 
 YaddaHtmlReporter.prototype.onStep = function(scenario){
@@ -115,7 +118,7 @@ YaddaHtmlReporter.prototype.onAfterEach = function(currentTest){
 
 
 
-YaddaHtmlReporter.prototype.onAfter = function(){
+YaddaHtmlReporter.prototype.onAfter = function(feature){
     this.executedFeatures++;
 
     if (this.reportingFeature.status == 'passed' || this.reportingFeature.status == 'not_executed') {
@@ -136,6 +139,10 @@ YaddaHtmlReporter.prototype.onAfter = function(){
     });
 
     this.featureFiles.features.push({
+        name: feature.title,
+        status : this.reportingFeature.status,
+        tags : feature.annotations,
+        descriptionLines : feature.description,
         scenarios : this.reportingFeature.scenarios
     });
     this.featureFiles.totalFeatures = this.totalFeatures;
