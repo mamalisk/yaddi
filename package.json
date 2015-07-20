@@ -1,17 +1,17 @@
 {
   "name": "yadda-mocha-html-reporter",
   "version": "0.0.5",
-  "description" : "A Yadda HTML report when using mocha.",
+  "description": "A Yadda HTML report when using mocha.",
   "homepage": "https://github.com/mamalisk/yadda-html-reporter",
-  "author" : "Kostas Mamalis <mamalis.kostas@gmail.com>",
-  "contributors" : [],
-  "repository" : {
-    "type" : "git",
-    "url"  : "git://github.com/mamalisk/yadda-html-reporter.git"
+  "author": "Kostas Mamalis <mamalis.kostas@gmail.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mamalisk/yadda-html-reporter.git"
   },
-  "main" : "yadda-html-reporter.js",
-  "bugs" : {
-    "url" : "https://github.com/mamalisk/yadda-html-reporter/issues"
+  "main": "yadda-html-reporter.js",
+  "bugs": {
+    "url": "https://github.com/mamalisk/yadda-html-reporter/issues"
   },
   "license": [
     {
@@ -20,13 +20,13 @@
     }
   ],
   "dependencies": {
-    "underscore" : "1.8.2",
-    "jsonfile" : "~2.0.0"
+    "jsonfile": "~2.0.0",
+    "lokijs": "^1.3.7",
+    "underscore": "1.8.2"
   },
-  "devDependencies": {
-  },
-  "scripts" : {
-    "test" : "mocha"
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
   },
   "engines": {
     "node": ">=0.8.0"

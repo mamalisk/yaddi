@@ -1,0 +1,21 @@
+{
+	"name" : "yadda_basic",
+	"version" : "0.1.0",
+	"description" : "yadda example for reporting",
+	"private" : "true",
+	"dependencies" : {},
+	"devDependencies" : {
+		"mocha" : "~1.18.2",
+		"nconf" : "~0.7.1",
+		"yadda" : "^0.11.4",
+		"yadda-mocha-html-reporter" : "0.0.3",
+		"yargs" : "*",
+		    "lokijs": "^1.3.7"
+	},
+	"scripts" : {
+		"test" : "mocha -R spec --timeout 120000 yaddi.js"
+	},
+	"engines" : {
+		"node" : ">=0.10.37"
+	}
+}
