@@ -1,13 +1,12 @@
 var _ = require('underscore');
 var loki = require('lokijs');
-var yaddi = new loki('yaddi.json');
 var featureLoki = 1;
 var scenarioLoki = 0;
 
 var Yaddi = function(reportsOutputLocation){
-    
-    this.featuresDb = yaddi.addCollection('features');
-    this.scenariosDb = yaddi.addCollection('scenarios');
+    this.yaddi = new loki(reportsOutputLocation);
+    this.featuresDb = this.yaddi.addCollection('features');
+    this.scenariosDb = this.yaddi.addCollection('scenarios');
     this.reportsOutputLocation = reportsOutputLocation;
 };
 
@@ -99,7 +98,7 @@ Yaddi.prototype.onAfter = function(feature){
     }
     this.featuresDb.update(feat);
     featureLoki++;
-    yaddi.save();
+    this.yaddi.save();
 };
 
 

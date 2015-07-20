@@ -1,4 +1,4 @@
-Yadda HTML Reporter
+Yaddi... A Yadda HTML Reporter
 ===================
 
 Fancy HTML reports looking like ... this:
@@ -9,7 +9,7 @@ Fancy HTML reports looking like ... this:
 
 **INSTALLATION**
 
-      npm install yadda-mocha-html-reporter
+      npm install yaddi --save-dev
 
 
 **USAGE**
@@ -18,7 +18,7 @@ In order to use the yadda html report you need to do the following:
 
 a. instantiate YaddaReport:
 
-		var YaddaHtml = require('yadda-mocha-html-reporter');
+		var YaddaHtml = require('yaddi');
 		var reportsOutputLocation = './my_local_output_directory/yadda.json';
 		var YaddaHtmlRep = new YaddaHtml(reportsOutputLocation);
 
@@ -71,6 +71,8 @@ c. Render the HTML
 copy the example in the html of this git repository and there you have it. the yadda.json will get updated by your execution. hope it works!
 
 For any comments/suggestions feel free to raise issues in this project or mail me at mamalis.kostas@gmail.com 
+
+d. Have a look at our examples under examples folder
 
 
 
