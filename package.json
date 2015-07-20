@@ -1,22 +1,22 @@
 {
   "name": "yaddi",
-  "version": "0.0.2",
-  "description": "A Yadda HTML report when using mocha.",
+  "version": "0.0.3",
+  "description": "YADDI:> A Yadda HTML report when using mocha.",
   "homepage": "https://github.com/mamalisk/yadda-html-reporter",
   "author": "Kostas Mamalis <mamalis.kostas@gmail.com>",
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mamalisk/yadda-html-reporter.git"
+    "url": "git://github.com/mamalisk/yaddi.git"
   },
   "main": "yaddi.js",
   "bugs": {
-    "url": "https://github.com/mamalisk/yadda-html-reporter/issues"
+    "url": "https://github.com/mamalisk/yaddi/issues"
   },
   "license": [
     {
       "type": "MIT",
-      "url": "https://github.com/mamalisk/yadda-html-reporter/blob/master/LICENSE"
+      "url": "https://github.com/mamalisk/yaddi/blob/master/LICENSE"
     }
   ],
   "dependencies": {

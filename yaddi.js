@@ -63,13 +63,15 @@ Yaddi.prototype.onStep = function(scenario){
      
 };
 
+
 Yaddi.prototype.onAfterEach = function(currentTest){
     this.currentStatus = currentTest.state;
         console.log('scenario loki: ' + scenarioLoki);
             var scenario = this.scenariosDb.get(scenarioLoki);
             scenario.steps.push({
                 name: currentTest.title,
-                status : currentTest.state
+                status : currentTest.state,
+                duration : currentTest.duration + ' ms'
             });
 
             if(currentTest.state == 'failed'){
