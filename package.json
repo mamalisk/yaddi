@@ -1,6 +1,6 @@
 {
   "name": "yaddi",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "YADDI:> A Yadda HTML report when using mocha.",
   "homepage": "https://github.com/mamalisk/yadda-html-reporter",
   "author": "Kostas Mamalis <mamalis.kostas@gmail.com>",

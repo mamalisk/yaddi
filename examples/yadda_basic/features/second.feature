@@ -11,7 +11,7 @@ Feature: Feature 2
   @Not_poor
   Scenario: Rich scenario 2.1
      When I buy a Porsche
-     When I cause a failure
+     #     When I cause a failure
      Then I am happier
 
 

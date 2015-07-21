@@ -1,4 +1,5 @@
 var _ = require('underscore');
+var jsonfile = require('jsonfile');
 var loki = require('lokijs');
 var featureLoki = 1;
 var scenarioLoki = 0;
@@ -42,14 +43,11 @@ Yaddi.prototype.onStep = function(scenario){
     
     if(sc)
      {
-    
-        console.log('found');
         sc.name = scenario.title;
         sc.feature = featureLoki;
         sc.tags = Object.keys(scenario.annotations);    
         this.scenariosDb.update(sc);
     } else {
-        console.log('notFound');
         var newSc = this.scenariosDb.insert({
             feature : featureLoki,
             name : scenario.title,
@@ -66,7 +64,6 @@ Yaddi.prototype.onStep = function(scenario){
 
 Yaddi.prototype.onAfterEach = function(currentTest){
     this.currentStatus = currentTest.state;
-        console.log('scenario loki: ' + scenarioLoki);
             var scenario = this.scenariosDb.get(scenarioLoki);
             scenario.steps.push({
                 name: currentTest.title,
@@ -100,7 +97,11 @@ Yaddi.prototype.onAfter = function(feature){
     }
     this.featuresDb.update(feat);
     featureLoki++;
+    this.yaddi.saveDatabase(function(){
+        console.log('saved database...');
+    });
     this.yaddi.save();
+    jsonfile.writeFileSync(this.reportsOutputLocation);
 };
 
 
